@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
 
   user: any;
 
-  userMenu = [{ title: 'Profile' }, { title: 'Log out' }];
+  userMenu = [{ title: 'Log out' }];
 
   constructor(private sidebarService: NbSidebarService,
               private menuService: NbMenuService,
@@ -25,6 +25,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    // Get active user
     this.userService.getUsers()
       .subscribe((users: any) => this.user = users.nick);
   }

@@ -131,6 +131,10 @@ export const MENU_ITEMS: NbMenuItem[] = [
         title: 'Smart Table',
         link: '/pages/tables/smart-table',
       },
+      {
+        title: 'Drivers Table',
+        link: '/pages/tables/drivers-table',
+      }
     ],
   },
   {
